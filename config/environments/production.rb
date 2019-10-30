@@ -5,7 +5,7 @@ Rails.application.configure do
 
 
   config.action_mailer.default_url_options = { host: 'safe-wave-45466.herokuapp.com', protocol: 'https' }
-  config.action_mailer.delievery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
 
 
