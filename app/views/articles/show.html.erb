@@ -10,8 +10,9 @@
   <%= @article.text %>
 </p>
 
-<h2> <%= @article.comments.count %> Comments </h2>
+<h3 class="comment"> <%= @article.comments.count %> Comments </h3>
 <%= render @article.comments %>
+
 <h3> Add a Comment:  </h3>
 <%= render 'comments/form' %>
 
