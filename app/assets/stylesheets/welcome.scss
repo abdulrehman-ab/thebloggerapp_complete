@@ -1,0 +1,199 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+
+#show a
+{
+  text-decoration: none;
+  color: black;
+  background-color: #dfe2e2;
+  font-size: 150%;
+}
+
+
+
+#sub a
+{
+  text-decoration: none;
+  color: black;
+  background-color: #dfe2e2;
+  font-size: 120%;
+}
+
+#session
+{
+  width: 140px;
+  height: 40px;
+}
+
+#session a
+{
+  text-decoration: none;
+  color: black;
+  background-color: #dfe2e2;
+  font-size: 150%;
+}
+
+.main
+{
+  background-color: #dfe2e2;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+.main1
+{
+  background-color: #dfe2e2;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.main-login
+{
+  background-color: #dfe2e2;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.top-login
+{
+  background-color: #7d7d7d;
+  color: #dfddc7;
+  text-align: center;
+  padding: 2% 8%;
+}
+.top1
+{
+  background-color: #7d7d7d;
+  color: #dfddc7;
+  text-align: center;
+  padding: 2% 8%;
+}
+.mid-login
+{
+  background-color: #dfe2e2;
+  color: black;
+  text-align: center;
+  padding: 0% 25%;
+}
+.mid1
+{
+  background-color: #dfe2e2;
+  color: black;
+  text-align: center;
+  padding: 0% 25%;
+}
+
+.top-container
+{
+  background-color: #7d7d7d;
+  color: #dfddc7;
+  text-align: center;
+  padding: 2% 8%;
+}
+
+.middle-container
+{
+  background-color: #dfe2e2;
+  color: #7d7d7d;
+  text-align: center;
+}
+
+.buttons
+{
+  padding-bottom: 5%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.buttons1
+{
+  padding-bottom: 2%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.buttons1 a
+{
+  text-decoration: none;
+  color: black;
+  background-color: #dfe2e2;
+  font-size: 150%;
+}
+
+.buttons a
+{
+  text-decoration: none;
+  color: black;
+  background-color: #dfe2e2;
+  font-size: 150%;
+}
+.buttons a:hover
+{
+  transform: scale(1.5);
+}
+@media  (max-width:1000px)
+{
+ .buttons a
+ {
+   transition: transform .2s;
+   margin: 10px 20px;
+   width:50%;
+ }
+ .buttons a:hover
+ {
+   transform: scale(1.5);
+ }
+}
+
+
+button
+{
+  width: 120px;
+  height: 50px;
+  color: #dfddc7;
+  text-decoration: none;
+}
+
+h1
+{
+
+  font-size:70px;
+  font-family: 'Days one', Sans-Serif;
+
+}
+h2
+{
+  font-size:50px;
+  font-family: 'Days one', Sans-Serif;
+}
+
+p
+{
+  text-align: center;
+}
+
+.field
+{
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.field1
+{
+  padding-top: 20px;
+}
+.field2
+{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.actions
+{
+  padding-top: 10px;
+}
+

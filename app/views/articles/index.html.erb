@@ -1,0 +1,59 @@
+<div class="main1">
+
+  <div class="top1">
+    <h1>Listing articles</h1>
+    <div class="buttons1">
+      <button><%= link_to 'New article', new_article_path %></button>
+      <button><%= link_to 'Home', controller: 'welcome' %></button>
+      <% if(user_signed_in?) %>
+        <button id="show"><%= link_to 'Sign Out' , destroy_user_session_path , :method => 'delete' %></button>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="mid1">
+    <% @article.each do |article| %>
+      <p>
+        <strong>Title: </strong>
+        <%= article.title %>
+      </p>
+      <p>
+        <strong>Text: </strong>
+        <%= article.text %>
+      </p>
+      <p>
+        <strong>UserName: </strong>
+        <%=
+          i=0
+          str = " "
+          while(article.user.email[i]!='@')
+            str = str+ (article.user.email[i])
+            i=i+1
+          end
+        %>
+        <%= str %>
+      </p>
+      <p>
+        <strong>UserEmail: </strong>
+        <%= article.user.email  %>
+      </p>
+
+      <button id="show"><%= link_to 'Show', article_path(article) %></button>
+      <% if (article.user == current_user) %>
+        <button id="show"><%= link_to 'Edit', edit_article_path(article) %></button>
+        <button id="show"><%= link_to 'Delete', article_path(article) , method: :delete, data: {confirm: 'Are you sure you wanna delete this article?'} %></button>
+        <br>
+      <% end %>
+      <hr>
+
+      <% end %>
+      <br>
+
+
+
+  </div>
+
+  <br>
+
+</div>

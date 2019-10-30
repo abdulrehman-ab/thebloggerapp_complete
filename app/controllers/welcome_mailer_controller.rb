@@ -1,0 +1,2 @@
+class WelcomeMailerController < ApplicationController
+end

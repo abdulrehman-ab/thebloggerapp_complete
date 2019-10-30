@@ -1,0 +1,35 @@
+<div class="main">
+
+  <div class="top-container">
+    <h1>TheBlogger</h1>
+    <br>
+    <div class="buttons">
+      <% if(user_signed_in?) %>
+        <button><%= link_to 'Articles', controller: 'articles' %></button>
+        <button id="show"><%= link_to 'Sign Out' , destroy_user_session_path , :method => 'delete' %></button>
+      <% end %>
+      <% if !(user_signed_in?) %>
+        <button><%= link_to 'Articles', controller: 'articles' %></button>
+        <button><%= link_to 'LogIn' , new_user_session_path , :method => 'get' %></button>
+        <button><%= link_to 'Sign Up' , new_user_registration_path , :method => 'get' %></button>
+       <% end %>
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <h1>Welcome to TheBlogger</h1>
+    <hr>
+    <% if !(user_signed_in?) %>
+      <h3>
+       Please <strong>Login/Sign-up</strong> to create and view articles.
+      </h3>
+    <% end %>
+  </div>
+
+</div>
+
+
+
+
+
+
