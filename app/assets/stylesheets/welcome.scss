@@ -1,8 +1,3 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 h3
 {
   padding-top: 70px;
@@ -144,16 +139,16 @@ h3
 }
 @media  (max-width:1000px)
 {
- .buttons a
- {
-   transition: transform .2s;
-   margin: 10px 20px;
-   width:50%;
- }
- .buttons a:hover
- {
-   transform: scale(1.5);
- }
+  .buttons a
+  {
+    transition: transform .2s;
+    margin: 10px 20px;
+    width:50%;
+  }
+  .buttons a:hover
+  {
+    transform: scale(1.5);
+  }
 }
 
 
@@ -203,4 +198,3 @@ p
 {
   padding-top: 10px;
 }
-
