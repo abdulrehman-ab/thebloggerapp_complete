@@ -13,10 +13,12 @@
 <h3 class="comment"> <%= @article.comments.count %> Comments </h3>
 <%= render @article.comments %>
 
+<% if(user_signed_in?) %>
+
 <h3> Add a Comment:  </h3>
 <%= render 'comments/form' %>
 
-
+<% end %>
 <div class="mid-login">
   <% if (@article.user == current_user) %>
     <button id="session"><%= link_to 'Edit', edit_article_path(@article) %></button>
