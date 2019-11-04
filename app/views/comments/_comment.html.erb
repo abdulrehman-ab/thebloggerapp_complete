@@ -9,7 +9,13 @@
   <%= comment.body %>
 </p>
 
+<p>
+  <strong> Username: </strong>
+  <%= @article.user.email %>
+</p>
+
 <p> <%= time_ago_in_words(comment.created_at) %>  ago </p>
+<br>
 
 <p>
 
